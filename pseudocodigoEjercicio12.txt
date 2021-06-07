@@ -1,0 +1,46 @@
+Inicio pseudocodigoEjercicio12
+
+	Variable altura
+	Variable edad
+	Variable sexo
+	Variable alturaMujeres
+	Variable vecesMujeres
+	Variable promedioMujeres
+	Variable alturaHombres
+	Variable vecesHombres
+	Variable promedioHombres
+	Variable sumaEdades
+	Variable vecesEdades
+	Variable promedioParticipantes
+	
+	
+	hacer
+		Escribir "Ingrese su altura: "
+		Leer altura
+		Escribir "Ingrese su edad: "
+		Leer edad
+		Escribir "Ingrese su sexo F/M: "
+		Leer sexo
+		
+		Si(sexo==F) hacer
+			alturaMujeres = alturaMujeres + altura
+			vecesMujeres = vecesMujeres +1
+		FinSi
+		
+		Si(sexo==M) hacer
+			alturaHombres = alturaHombres + altura
+			vecesHombres = vecesHombres +1
+		FinSi
+		
+	Repetir hasta (altura>=0)
+	
+	promedioMujeres = alturaMujeres/vecesMujeres
+	Escribrir "El promedio de la altura de las mujeres es: " + promedioMujeres
+	
+	promedioHombres = alturaHombres/vecesHombres
+	Escribrir "El promedio de la altura de los hombres es: " + promedioHombres
+	
+	promedioParticipantes = sumaEdades/vecesEdades
+	Escribrir "El promedio de la edad de los participantes: " + Participantes
+	
+Fin
