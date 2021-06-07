@@ -22,6 +22,9 @@ Inicio pseudocodigoEjercicio12
 		Escribir "Ingrese su sexo F/M: "
 		Leer sexo
 		
+		sumaEdades = sumaEdades + edad
+		vecesEdades = vecesEdades + 1
+		
 		Si(sexo==F) hacer
 			alturaMujeres = alturaMujeres + altura
 			vecesMujeres = vecesMujeres +1
